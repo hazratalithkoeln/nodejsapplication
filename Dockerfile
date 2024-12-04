@@ -8,13 +8,14 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+# RUN npm install
+RUN npm install express
 
 # Copy the rest of the application code to the container
 COPY . .
 
 # Expose the application port
-EXPOSE 8080
+EXPOSE 8000
 
 # Define the command to run your application
 CMD ["node", "app.js"]
