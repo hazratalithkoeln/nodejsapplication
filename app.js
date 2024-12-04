@@ -3,7 +3,7 @@ const app = express()
 const port = 8000
 
 app.get('/', (req, res) => {
-    res.send('This is my Node application for CICD pipline')
+    res.send('This is my Node application for CI/CD Pipline')
 })
 
 app.listen(port, () => {
